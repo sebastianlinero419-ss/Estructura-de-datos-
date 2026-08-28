@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+
 using System;
 
 public class HelloWorld
@@ -20,9 +21,14 @@ public class HelloWorld
         double result = Math.Pow(num1, potencia);
         Console.WriteLine($"la potencia de {num1} elevado a {potencia} es : {result}");
 
-
-
     }
+
+    static void ModificarValor(int n)
+    {
+        n = n + 1;
+        Console.WriteLine($"DENTRO DEL METODO: {n}");
+    }
+
 
 
     public static void Main(string[] args)
@@ -33,6 +39,11 @@ public class HelloWorld
         ImprimirSuma(1000, -1);
 
         MostrarPotenciaX(x, y);
+
+        int edad = 16;
+        Console.WriteLine($"antes del metodo: {edad}");
+        ModificarValor(edad);
+        Console.WriteLine($"Despues del metodo: {edad}");
     }
 
 }
