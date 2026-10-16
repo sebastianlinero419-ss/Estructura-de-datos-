@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        string ruta = "studin.csv";
+        string ruta = "C:\\Users\\SALA-1\\Desktop\\sebastian\\studin.csv";
 
         using (StreamWriter sw = new StreamWriter(ruta))
         {
